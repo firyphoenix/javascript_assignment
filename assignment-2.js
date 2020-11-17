@@ -1,5 +1,5 @@
 //print 1 to 10 with while
-
+console.log("\n print 1 to 10 with while\n")
 var x = 1;
 while(x<=10) {
     console.log(x);
@@ -7,6 +7,7 @@ while(x<=10) {
 }
 
 //print 10 to 1 with while
+console.log("\nprint 10 to 1 with while\n")
 x = 10;
 while(x>0) {
     console.log(x);
@@ -14,11 +15,13 @@ while(x>0) {
 }
 
 //print 5 to 15 using for loop
+console.log("\n print 5 to 15 using for loop\n ")
 for(var i = 5; i<=15; i++) {
     console.log(i);
 }
 
 //print 15 to 10 using for
+console.log("\n print 15 to 10 using for \n ")
 for(var i = 15; i>9; i--) {
     console.log(i);
 }
