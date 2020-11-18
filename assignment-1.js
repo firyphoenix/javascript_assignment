@@ -67,6 +67,7 @@ console.log(min + "is the least between the given two number");
 console.log("\n check max b/w 3 numbers \n")
 var num3 = 151;
 var max3 = findMax3(num1,num2,num3);
+console.log("Max : " + max3);
 
 function findMax3(a,b,c) {
     if(a>b) {
@@ -82,6 +83,7 @@ function findMax3(a,b,c) {
 //finding min b/w 3 numbers
 console.log("\n finding min b/w 3 numbers \n ")
 var min3 = findMin3(num1,num2,num3);
+console.log("Min : " + min3);
 
 function findMin3(a,b,c) {
     if(a<b) {
@@ -91,4 +93,42 @@ function findMin3(a,b,c) {
         if(b<c) return b;
     }
     else return c;
+}
+
+//printing in ascending order
+console.log("\n printing in ascending order \n");
+var num = [5,4,3,2,1];
+sortAscending(num);
+function sortAscending(a) {
+    console.log("Given : " + a)
+    for(var i = 0 ; i< a.length; i++) {
+        for(var j = i+1; j<a.length; j++){
+            if(a[j] < a[i]) {
+                var temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+    console.log("sorted : " + a);
+}
+
+num = [1,2,3,4,5];
+
+//printing in descending Order
+console.log("\n printing in descending Order \n ");
+sortDescending(num);
+function sortDescending(a) {
+    console.log("Given : " + a);
+    for(var i = 0; i<a.length; i++) {
+        for(var j = i+1 ; j< a.length; j++) {
+            if(a[j] > a[i]) {
+                var temp = a[j];
+                a[j]= a[i];
+                a[i] = temp;
+            }
+        }
+
+}
+console.log("Descending : " + a);
 }
